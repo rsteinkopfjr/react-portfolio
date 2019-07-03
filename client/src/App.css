@@ -3,12 +3,18 @@
   background-color: #F3F2F1;
 }
 
+/* Theme Landing Page */
+
+.themeContainer {
+  z-index: 1;
+}
+.hideThemeContainer {
+  display: none;
+}
 .App-logo {
   height: 40vmin;
 }
-
 .App-header {
-  /* background-image: url("./images/what-the-hex-dark.png"); */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,20 +29,152 @@
 .darkHovered {
   background-image: url("./images/what-the-hex-dark.png");
 }
-
+.lightHovHead {
+  color: #1dbaa0;
+}
+.darkHovHead {
+  color: #74e0ce;
+}
 .jumbotron {
   background: transparent;
 }
-
 #lightSide {
   color: #74e0ce;
   border-color: #74e0ce;
 }
-
 #darkSide {
   color: #1dbaa0;
   border-color: #1dbaa0;
 }
+
+/* End Theme Landing Page */
+
+/* Main Element */
+
+.mainContainer {
+  background-color: #F3F2F1;
+  color: #1dbaa0;
+}
+.hideMainContainer {
+  display: none;
+}
+.lightPortfolio {
+  background-image: url("./images/what-the-hex.png");
+}
+.darkPortfolio {
+  background-image: url("./images/what-the-hex-dark.png");
+}
+.navbar {
+  background: transparent !important;
+}
+#changeThemeLight {
+  color: #1dbaa0;
+}
+#changeThemeDark {
+  color: #74e0ce;
+}
+.carousel {
+  height: 500px;
+}
+.carousel-item {
+  margin-top: 175px;
+}
+.carousel-quote-light {
+  color: #1dbaa0;
+}
+.carousel-quote-dark {
+  color: #74e0ce;
+}
+.carousel-btn-light {
+  margin-top: 20px;
+  color: #1dbaa0;
+  border-color: #1dbaa0;
+}
+.carousel-btn-dark {
+  margin-top: 20px;
+  color: #74e0ce;
+  border-color: #74e0ce;
+}
+.carousel-btn-light:hover {
+  margin-top: 20px;
+  color: #F3F2F1;
+  border-color: #1dbaa0;
+  background-color: #1dbaa0;
+}
+.carousel-btn-dark:hover {
+  margin-top: 20px;
+  color: #F3F2F1;
+  border-color: #74e0ce;
+  background-color: #74e0ce;
+}
+.scroll-container {
+  position: relative;
+  width: 28px;
+  height: 24px;
+}
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+}
+.chevron-light:before,
+.chevron-light:after {
+  background: #333333;
+}
+.chevron-dark:before,
+.chevron-dark:after {
+  background: #F3F2F1;
+}
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+@keyframes move {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
+/* End Main Element */
 
 @keyframes App-logo-spin {
   from {
