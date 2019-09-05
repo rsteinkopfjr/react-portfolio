@@ -160,7 +160,7 @@ class App extends Component {
             {/* Carousel Element */}
             <div className="jumbotron">
               <div className="container">
-                <div
+                {/* <div
                   className="carousel"
                   data-ride="carousel"
                   data-pause="false"
@@ -294,35 +294,36 @@ class App extends Component {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
-              {/* Scroll Icon  Element */}
-              <div className="container scroll-container">
-                <div
-                  className={
-                    this.state.theme === "light"
-                      ? "chevron chevron-light"
-                      : "chevron chevron-dark"
-                  }
-                />
-                <div
-                  className={
-                    this.state.theme === "light"
-                      ? "chevron chevron-light"
-                      : "chevron chevron-dark"
-                  }
-                />
-                <div
-                  className={
-                    this.state.theme === "light"
-                      ? "chevron chevron-light"
-                      : "chevron chevron-dark"
-                  }
-                />
-              </div>
-              {/* End Scroll Icon Element */}
             </div>
             {/* End Carousel Element */}
+
+            {/* Scroll Icon  Element */}
+            <div className="container scroll-container">
+              <div
+                className={
+                  this.state.theme === "light"
+                    ? "chevron chevron-light"
+                    : "chevron chevron-dark"
+                }
+              />
+              <div
+                className={
+                  this.state.theme === "light"
+                    ? "chevron chevron-light"
+                    : "chevron chevron-dark"
+                }
+              />
+              <div
+                className={
+                  this.state.theme === "light"
+                    ? "chevron chevron-light"
+                    : "chevron chevron-dark"
+                }
+              />
+            </div>
+            {/* End Scroll Icon Element */}
 
             {/* About Element */}
             <div className="jumbotron">

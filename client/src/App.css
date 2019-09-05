@@ -108,7 +108,9 @@
   background-color: #74e0ce;
 }
 .scroll-container {
-  position: relative;
+  position: absolute;
+  bottom: 5%;
+  left: 48%;
   width: 28px;
   height: 24px;
 }
