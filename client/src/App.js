@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import logo from "./images/RS_Logo.png";
 import "./App.css";
 import "../../node_modules/animate.css/animate.min.css";
+import DarkJumbo from "./DarkThemeJumbo";
+import LightJumbo from "./LightThemeJumbo";
 
 class App extends Component {
   constructor() {
@@ -158,9 +160,10 @@ class App extends Component {
             {/* End Nav Bar Element */}
 
             {/* Carousel Element */}
-            <div className="jumbotron">
+            {this.state.theme === "light" ? <LightJumbo /> : <DarkJumbo />}
+            {/* <div className="jumbotron">
               <div className="container">
-                {/* <div
+                <div
                   className="carousel"
                   data-ride="carousel"
                   data-pause="false"
@@ -294,9 +297,9 @@ class App extends Component {
                       </div>
                     </div>
                   </div>
-                </div> */}
+                </div>
               </div>
-            </div>
+            </div> */}
             {/* End Carousel Element */}
 
             {/* Scroll Icon  Element */}
